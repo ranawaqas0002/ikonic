@@ -1,0 +1,239 @@
+/*!
+Theme Name: ikonic
+Theme URI: www.ikonic.com
+Author: Underscores.me
+Author URI: www.ikonic.com
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ikonic
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+*/
+
+body {
+    font-family: 'Catamaran', sans-serif;
+}
+h1{
+	font-size: 60px;
+	line-height: 65px;
+	font-weight: 600;
+}
+
+h2{
+	font-size: 40px;
+	line-height: 55px;
+	font-weight: 600
+}
+h3{
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 35px;
+}
+
+p{
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 300;
+}
+
+.white-text{
+	color: #ffffff;
+}
+.gray-text{
+	color: #54585A;
+}
+
+.white-bg{
+	background-color: white;
+}
+.light-gray-bg{
+	background-color: #F2F2F2;
+}
+.blue-bg{ 
+	background-color: #345884;
+}
+.align-center{
+	text-align: center;;
+}
+.gradient-bg{
+	background: transparent linear-gradient(90deg, #326295 0%, #4D8ED3 100%) 0% 0% no-repeat padding-box;
+}
+.pt-220{
+	padding-top: 220px;
+}
+.pb-220{
+	padding-bottom: 220px;
+}
+.pt-150{
+	padding-top: 150px;
+}
+.pb-150{
+	padding-bottom: 150px;
+}
+.pt-180{
+	padding-top: 180px;
+}
+.pb-180{
+	padding-bottom: 180px;
+}
+.pt-90{
+	padding-top: 90px;
+}
+.pb-90{
+	padding-bottom: 90px;
+}
+.pt-50{
+	padding-top: 50px;
+}
+.pb-50{
+	padding-bottom: 50px;
+}
+.pt-30{
+	padding-top: 30px;
+}
+.pb-30{
+	padding-bottom: 30px;
+}
+
+.sm-pt{
+	padding-top: 15px;
+}
+.sm-pb{
+	padding-bottom: 15px;
+}
+.mt-40{
+	margin-top: 40px;
+}
+.mb-40{
+	margin-bottom: 40px;
+}
+
+.main-image{
+	background-image: url('assets/images/main-image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+	.mt-40{
+		margin-top: 20px;
+	}
+	.mb-40{
+		margin-bottom: 20px;
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+	h1 {
+		font-size: 48px;
+		line-height: 54px;
+	}
+	h3 {
+		font-size: 22px;
+		line-height: 26px;
+	}
+	h2 {
+		font-size: 34px;
+		line-height: 40px;
+	}
+	.card-top {
+		max-width: 320px !important;
+		width: 100% !important;
+		height: 210px !important;
+	}
+	.space-left {
+		margin-left: 0px !important;
+	}
+	.card-top {
+		margin: 5px !important
+	}
+	.sm-pb {
+		padding-bottom: 10px;
+	}
+	.pt-150{
+		padding-top: 100px;
+	}
+	.pb-150{
+		padding-bottom: 100px;
+	}
+	.pt-50{
+		padding-top: 30px;
+	}
+	.pb-50{
+		padding-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 40px;
+		line-height: 48px;
+	}
+	h3 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	h2 {
+		font-size: 30px;
+		line-height: 38px;
+	}
+	.joint-img img {
+		max-width: 320px !important;
+		width: 100% !important;
+	}
+	.pt-150{
+		padding-top: 80px;
+	}
+	.pb-150{
+		padding-bottom: 80px;
+	}
+	.pt-50{
+		padding-top: 30px;
+	}
+	.pb-50{
+		padding-bottom: 30px;
+	}
+	
+}
+
+header {
+    padding-top: 25px;
+	padding-bottom: 25px;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1;
+    transition: background-color 600ms, padding 600ms, top 1400ms;
+    top:0;
+  }
+  
+  header ul {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+    
+  }
+
+  ul#menu-menu-1 a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #545454;
+    font-weight: 600;
+	margin-bottom: 0px;
+}
+ul#menu-menu-1{
+	margin-bottom: 0px;
+}
+  
+header#header ul li {
+    margin-right: 40px;
+}
+
