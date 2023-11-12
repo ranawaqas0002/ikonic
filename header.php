@@ -57,6 +57,27 @@ ul#menu-menu-1 a:hover {
 .mobile-menu {
         display: none;
     }
+    ul#menu-menu-2 {
+    display: block;
+}
+ul#menu-menu-2 li {
+    margin-bottom: 10px;
+    color: #545454;
+    text-decoration: none;
+    list-style: none;
+}
+ul#menu-menu-2 li a {
+    color: #545454;
+    text-decoration: none;
+    font-size: 16px;
+}
+ul#menu-menu-2 li a:hover {
+    color: #326295;
+}
+button.btn.btn-primary.humburger {
+    background-color: #326295;
+    border: none;
+}
 
     @media screen and (max-width: 767px) {
         .mobile-menu {
@@ -72,6 +93,7 @@ ul#menu-menu-1 a:hover {
             margin-bottom: 10px;
         }
     }
+    
 @media (min-width:1024px) and (max-width:1199px){
 	header#header ul li {
     margin-right: 30px;
@@ -87,9 +109,9 @@ ul#menu-menu-1 a:hover {
 }
 }
 @media screen and (min-width: 768px) {
-	button#hamburger-menu{
-		display: none;
-	}
+	button.btn.btn-primary.humburger {
+    display: none;
+}
 	
 }
 @media screen and (max-width:767px) {
@@ -117,7 +139,7 @@ ul#menu-menu-1 a:hover {
         <div class="row">
           <div class="col-lg-3 col-md-3 col-10"><a href="#" id="mainlogo" class="animate" data-animate="fade-in-top"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-ikonic1.jpg" alt=""></a></div>
           <div class="col-lg-9 col-md-9 col-2 right">
-		  <button class="hamburger" id="hamburger-menu">&#9776;</button>
+		  
 
             <?php
               // Loading WordPress Custom Menu (theme_location).
@@ -129,6 +151,33 @@ ul#menu-menu-1 a:hover {
                 )
               );
             ?>
+
+
+                <button class="btn btn-primary humburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">&#9776;</button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">iKonic Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <div>
+                <?php
+              // Loading WordPress Custom Menu (theme_location).
+              wp_nav_menu(
+                array(
+                  'container'      => '',
+                  // 'menu_id' => 'header-menu',
+                  // 'menu_class'     => 'navbar-nav'
+                )
+              );
+            ?>
+                    </div>
+                    <div class="dropdown mt-3">
+                   
+                    
+                </div>
+                </div>
          
              
             
